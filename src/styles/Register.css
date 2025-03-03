@@ -1,0 +1,48 @@
+.register-page {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.register-page h2 {
+  margin-bottom: 20px;
+}
+
+.register-page input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-page button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0f2a67;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-page button:hover {
+  background-color: #3700b3;
+}
+
+.register-page p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-page a {
+  color: #0f2a67;
+  text-decoration: none;
+}
+
+.register-page a:hover {
+  text-decoration: underline;
+}
