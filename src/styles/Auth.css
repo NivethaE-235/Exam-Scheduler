@@ -1,17 +1,29 @@
-.exam-form {
+.auth-container {
+  max-width: 500px;
+  margin: 5rem auto;
   background: white;
-  padding: 2.5rem;
+  padding: 3rem;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  max-width: 600px;
-  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
-.exam-form h2 {
+.auth-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--primary), var(--accent));
+}
+
+.auth-container h2 {
   text-align: center;
   margin-bottom: 2rem;
   color: var(--primary);
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .form-group {
@@ -25,25 +37,22 @@
   color: var(--dark);
 }
 
-.form-group input,
-.form-group select {
+.form-group input {
   width: 100%;
   padding: 1rem;
   border: 2px solid #e0e0e0;
   border-radius: 8px;
   font-size: 1rem;
   transition: all 0.3s ease;
-  font-family: 'Poppins', sans-serif;
 }
 
-.form-group input:focus,
-.form-group select:focus {
+.form-group input:focus {
   border-color: var(--primary);
   outline: none;
   box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
 }
 
-.exam-form button {
+.auth-container button {
   width: 100%;
   padding: 1rem;
   background: var(--primary);
@@ -55,12 +64,27 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
-.exam-form button:hover {
+.auth-container button:hover {
   background: var(--secondary);
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(67, 97, 238, 0.3);
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #666;
+}
+
+.auth-footer a {
+  color: var(--primary);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.auth-footer a:hover {
+  color: var(--secondary);
+  text-decoration: underline;
 }

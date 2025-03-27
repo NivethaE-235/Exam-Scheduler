@@ -1,17 +1,17 @@
 .header {
-    background-color: #0f2a67;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-  }
-  
-  .header p {
-    margin: 5px 0 0;
-    font-size: 1.2rem;
-    color: white;
-  }
+  background: #0f2a67;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}

@@ -8,24 +8,18 @@ import '../styles/Home.css';
 const Home = () => {
   const navigate = useNavigate();
 
-  const handleLoginClick = () => {
-    navigate('/login');
-  };
-
-  const handleRegisterClick = () => {
-    navigate('/register');
-  };
-
   return (
-    <div className="home">
+    <div className="home-page">
       <Navbar />
       <Header />
       <main className="main-content">
-        <h2>Welcome to Exam Scheduler</h2>
-        <p>Plan your exams efficiently and stay organized!</p>
-        <div className="home-buttons">
-          <button onClick={handleLoginClick}>Login</button>
-          <button onClick={handleRegisterClick}>Register</button>
+        <div className="hero-section">
+          <h2>Welcome to Exam Scheduler</h2>
+          <p>Plan your exams efficiently and stay organized!</p>
+          <div className="cta-buttons">
+            <button onClick={() => navigate('/login')}>Login</button>
+            <button onClick={() => navigate('/register')}>Register</button>
+          </div>
         </div>
       </main>
       <Footer />

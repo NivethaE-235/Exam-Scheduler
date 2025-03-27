@@ -1,0 +1,15 @@
+/* Import all CSS files */
+@import './App.css';
+@import './Auth.css';
+@import './Dashboard.css';
+@import './ExamStatus.css';
+@import './Navbar.css';
+@import './ExamForm.css';
+@import './Footer.css';
+@import './CalendarView.css';
+@import './Home.css';
+@import './ErrorBoundary.css';
+@import './Loading.css';
+@import './Notification.css';
+@import './Responsive.css';
+@import './Utility.css';
